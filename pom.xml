@@ -35,6 +35,20 @@
 		</dependency>
 	</dependencies>
 	
+	<!-- [PIPELINE] -->
+	<distributionManagement>
+		<repository>
+			<id>${distribution.management.release.id}</id>
+			<name>Spring Milestone Repository</name>
+			<url>${distribution.management.release.url}</url>
+		</repository>
+		<snapshotRepository>
+			<id>${distribution.management.release.id}</id>
+			<name>Spring Snapshot Repository</name>
+			<url>${distribution.management.snapshot.url}</url>
+		</snapshotRepository>
+	</distributionManagement>
+	
 	
 	<profiles>
 		<profile>
